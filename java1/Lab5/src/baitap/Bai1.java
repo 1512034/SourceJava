@@ -1,23 +1,28 @@
 package baitap;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Bai1 {
 	public static void main(String[] args) {
+
+		// nhập số lượng số thực
+		int n;
+		System.out.print("Nhập số lượng số thực của danh sách: ");
+		Scanner s = new Scanner(System.in);
+		n = s.nextInt();
+
 		ArrayList<Double> a = new ArrayList<Double>();
 
-		a.add(4.2);
-		a.add(1.3);
-		a.add(6.4);
-		a.add(12.1);
-		a.add(11.6);
-		a.add(20.7);
-
-		double tong = 0;
-		for (Double x : a) {
-			tong+=x;			
+		for (int i = 0; i < n; i++) {
+			System.out.print("Nhập số thực: ");
+			double temp = s.nextDouble();
+			a.add(temp);
 		}
-		System.out.println("Sum of list: " + tong);
+
+		for (double x : a) {
+			System.out.print(x + " ");
+		}
 
 	}
+
 }
