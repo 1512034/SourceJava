@@ -9,19 +9,19 @@ public class NhanVien {
 	
 	Scanner sc=new Scanner(System.in);
 	
-	public void nhap() {
-		System.out.print("Nhap ho ten nhan vien: ");
+	public void nhap() {				
+		System.out.print("Nhập họ tên nhân viên: ");
 		this.fullName=sc.nextLine();
-		System.out.print("Nhap ma nhan vien: ");
+		System.out.print("Nhập mã nhân viên: ");
 		this.id=sc.nextLine();
-		System.out.print("Nhap luong: ");
+		System.out.print("Nhập lương: ");
 		this.salary=sc.nextDouble();
 	}
 	
 	public void xuat() {
-		System.out.println("Ho va ten: "+this.fullName);
-		System.out.println("Ma nhan vien: "+this.id);
-		System.out.println("Luong: "+this.salary);
+		System.out.println("Họ và tên: "+this.fullName);
+		System.out.println("Mã: "+this.id);
+		System.out.println("Lương: "+this.salary);
 	}
 	
 	public String getName() {
